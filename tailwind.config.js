@@ -14,6 +14,7 @@ module.exports = {
         blue1: "#1D2F6F",
         blue2: "#2563EB",
         gray1: "#434D56",
+        gray2: "#f3f4f6",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

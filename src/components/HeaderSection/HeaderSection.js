@@ -1,7 +1,9 @@
 import React from "react";
 import BgImage1 from "../../images/bgImage1.png";
 import BgImage2 from "../../images/bgImage2.png";
-import BgImage3 from "../../images/bgImage3.png";
+import card1 from "../../images/card1.png";
+import card2 from "../../images/card2.png";
+import card3 from "../../images/card3.png";
 
 // Header Section Component
 const HeaderSection = () => {
@@ -26,17 +28,27 @@ const HeaderSection = () => {
         <img
           src={BgImage1}
           alt="bg"
-          className="z-0 absolute lg:top-12 2xl:top-2 lg:right-[144px] 2xl:right-96 lg:w-[350px] 2xl:w-[387px]"
+          className="z-0 absolute lg:top-2 2xl:top-1 lg:right-[190px] 2xl:right-96 lg:w-[350px] 2xl:w-[387px]"
         />
         <img
           src={BgImage2}
           alt="bg2"
-          className="z-10 absolute lg:top-24 2xl:top-20 lg:right-4 2xl:right-36 lg:w-[400px] 2xl:w-[574px]"
+          className="z-10 absolute lg:top-16 2xl:top-18 lg:right-20 2xl:right-36 lg:w-[400px] 2xl:w-[574px] rotate-3"
         />
         <img
-          src={BgImage3}
-          alt="bg3"
-          className="absolute lg:top-7 2xl:top-1 z-20 right-4 lg:w-[450px] 2xl:w-[723px]"
+          src={card1}
+          alt="card"
+          className="z-20 absolute lg:top-20 lg:right-[350px] 2xl:right-[582px] 2xl:top-24"
+        />
+        <img
+          src={card2}
+          alt="card"
+          className="z-20 absolute lg:top-4 lg:right-1 2xl:right-16 2xl:top-10"
+        />
+        <img
+          src={card3}
+          alt="card"
+          className="z-20 absolute lg:bottom-20 lg:right-4 2xl:-bottom-4 2xl:right-40"
         />
       </div>
     </div>

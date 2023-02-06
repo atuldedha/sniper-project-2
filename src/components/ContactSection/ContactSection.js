@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <div className="w-full bg-green1 flex flex-col lg:flex-row items-center justify-between px-10 py-8 lg:px-36 lg:py-16">
       <div className="flex flex-col space-y-4">
-        <span className="font-plus text-white text-[18px] leading-[26px] lg:text-[28px] lg:leading-[34px]">
+        <span className="font-plus font-bold text-white text-[18px] leading-[26px] lg:text-[28px] lg:leading-[34px]">
           Still have more questions? Contact us now.
         </span>
         <span className="font-inter font-normal text-[12px] leading-[20px] lg:text-[16px] lg:leading-[28px] text-white">

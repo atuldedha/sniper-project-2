@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +9,9 @@
   }
   .specificationText {
     @apply font-inter font-semibold text-[16px] leading-[26px] text-black1;
+  }
+
+  .inputStyle {
+    @apply py-[12px] lg:py-[16px] px-[16px] lg:px-[33px] w-full font-poppins font-normal text-[12px] leading-[18px] placeholder:font-poppins placeholder:font-normal placeholder:text-[12px] placeholder:leading-[18px] text-black3 placeholder:text-black3 border border-green3 bg-inherit outline-none rounded-md;
   }
 }

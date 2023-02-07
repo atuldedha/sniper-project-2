@@ -3,6 +3,7 @@ import FAQSection from "./components/FAQSection/FAQSection";
 import Footer from "./components/Footer/Footer";
 import HeaderSection from "./components/HeaderSection/HeaderSection";
 import SpecificationSection from "./components/SpecificationSection/SpecificationSection";
+import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSection";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         buttonText="Join Free Class Now"
         handleClick={() => {}}
       />
+      {/* form section */}
+      <WaitingFormSection />
       {/* header section */}
       <HeaderSection />
       {/* FAQ Section */}

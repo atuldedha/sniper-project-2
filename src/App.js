@@ -1,5 +1,6 @@
 import ContactSection from "./components/ContactSection/ContactSection";
 import FAQSection from "./components/FAQSection/FAQSection";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import Footer from "./components/Footer/Footer";
 import HeaderSection from "./components/HeaderSection/HeaderSection";
 import SpecificationSection from "./components/SpecificationSection/SpecificationSection";
@@ -8,6 +9,8 @@ import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSecti
 function App() {
   return (
     <div className="">
+      {/* features section */}
+      <FeaturesSection />
       {/* specifications */}
       <SpecificationSection />
       {/* Join Course Section */}

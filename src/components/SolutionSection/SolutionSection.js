@@ -48,15 +48,12 @@ const SolutionSection = () => {
       <div className="flex flex-col-reverse lg:flex-row-reverse items-center lg:space-x-24 mb-[130px]">
         <div className="basis-1/2">
           <SolutionPoints
-            title="POS system helps to improve your business easily & quickly without
-            any hassle"
-            subTitle="Sark POS system helps you improve your operations for your
-            customers. This includes reducing waiting time, faster scanning of
-            items, quicker payments and many options for your business."
+            title="Grow your business from one to a hundred stores through multi-store management"
+            subTitle="With multi-store management you can easily grow your business. Easily keep track of all transactions & keep inventory management with POS. Save all your data sources together securely."
             points={[
-              "Save time and money with your all-in-one POS system",
-              "Better online purchasing & supplier order management",
-              "Create reports automatically and multi-store functions",
+              "Use the same rewarding system across all chain stores",
+              "Check the employee performance & reward accordingly",
+              "See purchase history of customers to know them better",
             ]}
             pointImg={PointIcon2}
           />

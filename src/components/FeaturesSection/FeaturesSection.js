@@ -6,7 +6,7 @@ const FeaturesSection = () => {
   const [filterValue, setFilterValue] = useState("");
   return (
     <div className="flex flex-col items-center justify-center px-[30px] md:px-[60px] lg:px-[150px] py-[30px] md:py-[60px] lg:py-[100px] w-full">
-      <span className="font-grotesk font-normal text-green4 text-[52px] leading-[62px] text-center mb-10">
+      <span className="font-grotesk font-normal text-green4 text-[24px] leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[52px] lg:leading-[62px] text-center mb-10">
         SARK provides various types
       </span>
 
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-10">
         {data?.map((feature, index) =>
           filterValue ? (
             feature.type === filterValue && (

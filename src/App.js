@@ -3,16 +3,22 @@ import FAQSection from "./components/FAQSection/FAQSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import Footer from "./components/Footer/Footer";
 import HeaderSection from "./components/HeaderSection/HeaderSection";
+import SolutionSection from "./components/SolutionSection/SolutionSection";
 import SpecificationSection from "./components/SpecificationSection/SpecificationSection";
 import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSection";
 
 function App() {
   return (
     <div className="">
-      {/* features section */}
-      <FeaturesSection />
       {/* specifications */}
       <SpecificationSection />
+
+      {/* Solutions Section */}
+      <SolutionSection />
+
+      {/* features section */}
+      <FeaturesSection />
+
       {/* Join Course Section */}
       <ContactSection
         titleText="Join one of our free courses now"
@@ -20,12 +26,16 @@ function App() {
         buttonText="Join Free Class Now"
         handleClick={() => {}}
       />
+
       {/* form section */}
       <WaitingFormSection />
+
       {/* header section */}
       <HeaderSection />
+
       {/* FAQ Section */}
       <FAQSection />
+
       {/* Contact us  */}
       <ContactSection
         titleText="Still have more questions? Contact us now."
@@ -34,6 +44,7 @@ function App() {
         buttonText="Contact us now"
         handleClick={() => {}}
       />
+
       {/* footer */}
       <Footer />
     </div>

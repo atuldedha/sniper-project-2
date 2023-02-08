@@ -34,6 +34,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         grotesk: ["Space Grotesk", "sans-serif"],
         DM: ["DM Serif Text", "serif"],
+        "public-sans": ["Public Sans", "sans-serif"],
       },
     },
   },

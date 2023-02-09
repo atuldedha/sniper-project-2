@@ -3,7 +3,7 @@ import Arrow from "../../../images/arrowBlack.svg";
 
 const FeatureCard = ({ image, title, subTitle }) => {
   return (
-    <div className="flex flex-col border-[3px] border-blue3 shadow-2xl rounded-xl px-[18px] pt-[20px] lg:px-[25px] lg:pt-[30px] pb-[12px]">
+    <div className="flex flex-col border-[3px] border-b-[10px] border-r-[10px] border-r-blue3 border-b-blue3 border-blue3 shadow-2xl rounded-xl px-[18px] pt-[20px] lg:px-[25px] lg:pt-[30px] pb-[12px]">
       <div className="flex flex-col space-y-2 space-x-0 sm:space-y-0 sm:flex-row sm:items-start sm:space-x-3 lg:space-x-6 mb-[22px]">
         <img
           src={image}

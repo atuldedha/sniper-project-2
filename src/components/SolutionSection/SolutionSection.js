@@ -9,13 +9,13 @@ import BgImage2 from "../../images/combinedCards.svg";
 
 const SolutionSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-[40px] py-[20px] sm:px-[50px] sm:py-[40px] lg:px-[100px] lg:py-[60px]">
+    <div className="flex flex-col items-center justify-center px-[30px] md:px-[60px] lg:px-[150px] py-[20px] sm:py-[40px] lg:py-[60px]">
       <span className="font-public-sans font-bold text-[28px] leading-[30px] sm:text-[32px] sm:leading-[40px] lg:text-[42px] text-black1 lg:leading-[53px] text-center mb-[90px]">
         Sleeqbooking solves your problems
       </span>
 
       {/* Solution point 1 */}
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-24 mb-[130px]">
+      <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-24 mb-[50px] lg:mb-[130px]">
         <div className="basis-1/2">
           <SolutionPoints
             title="POS system helps to improve your business easily & quickly without
@@ -31,11 +31,11 @@ const SolutionSection = () => {
             pointImg={PointIcon1}
           />
         </div>
-        <div className="relative basis-1/2 mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
           <img
             src={BgImageRed}
             alt="bg"
-            className="absolute -top-[70px] -left-10 z-0 w-[300px] lg:w-[350px] 2xl:w-[387px]"
+            className="absolute -top-[44px] -left-10 lg:-top-[60px] lg:left-10 z-0 w-[300px] lg:w-[350px] 2xl:w-[387px]"
           />
           <img
             src={BgImage1}
@@ -45,8 +45,8 @@ const SolutionSection = () => {
         </div>
       </div>
       {/* solution point 2 */}
-      <div className="flex flex-col-reverse lg:flex-row-reverse items-center lg:space-x-24 mb-[130px]">
-        <div className="basis-1/2">
+      <div className="flex flex-col-reverse lg:flex-row-reverse items-center mb-[50px] lg:mb-[130px]">
+        <div className="basis-1/2 ml-0 lg:ml-12">
           <SolutionPoints
             title="Grow your business from one to a hundred stores through multi-store management"
             subTitle="With multi-store management you can easily grow your business. Easily keep track of all transactions & keep inventory management with POS. Save all your data sources together securely."
@@ -58,11 +58,11 @@ const SolutionSection = () => {
             pointImg={PointIcon2}
           />
         </div>
-        <div className="relative basis-1/2 mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
           <img
             src={BgImageBlue}
             alt="bg"
-            className="absolute -top-[10px] -left-10 z-0 w-[380px] lg:w-[400px] 2xl:w-[460px]"
+            className="absolute -top-[10px] left-10 z-0 w-[380px] lg:w-[400px] 2xl:w-[460px]"
           />
           <img
             src={BgImage2}
@@ -89,11 +89,11 @@ const SolutionSection = () => {
             pointImg={PointIcon1}
           />
         </div>
-        <div className="relative basis-1/2 mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
           <img
             src={BgImageRed}
             alt="bg"
-            className="absolute -top-[70px] -left-10 z-0 w-[300px] lg:w-[350px] 2xl:w-[387px]"
+            className="absolute -top-[44px] -left-10 lg:-top-[60px] lg:left-10 z-0 w-[300px] lg:w-[350px] 2xl:w-[387px]"
           />
           <img
             src={BgImage1}

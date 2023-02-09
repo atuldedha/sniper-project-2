@@ -3,6 +3,8 @@ import FAQSection from "./components/FAQSection/FAQSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import Footer from "./components/Footer/Footer";
 import HeaderSection from "./components/HeaderSection/HeaderSection";
+import HeroSection from "./components/HeroSection/HeroSection";
+import ScaleLearningSection from "./components/ScaleLearningSection/ScaleLearningSection";
 import SolutionSection from "./components/SolutionSection/SolutionSection";
 import SpecificationSection from "./components/SpecificationSection/SpecificationSection";
 import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSection";
@@ -10,6 +12,9 @@ import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSecti
 function App() {
   return (
     <div className="">
+      {/* HeroSection */}
+      <HeroSection />
+
       {/* specifications */}
       <SpecificationSection />
 
@@ -18,6 +23,9 @@ function App() {
 
       {/* features section */}
       <FeaturesSection />
+
+      {/* Scale Learning Section */}
+      <ScaleLearningSection />
 
       {/* Join Course Section */}
       <ContactSection

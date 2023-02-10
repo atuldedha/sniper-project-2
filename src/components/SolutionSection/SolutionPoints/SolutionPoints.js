@@ -12,7 +12,10 @@ const SolutionPoints = ({ title, subTitle, points, pointImg }) => {
       </span>
 
       {points?.map((point, index) => (
-        <div key={index} className="flex items-center space-x-4 mb-5">
+        <div
+          key={index}
+          className="flex items-center xl:justify-start md:justify-center w-full space-x-4 mb-5"
+        >
           <img src={pointImg} alt="point" className="" />
           <span className="font-inter font-semibold text-[14px] leading-[24px] lg:text-[18px] lg:leading-[30px] text-blue3">
             {point}

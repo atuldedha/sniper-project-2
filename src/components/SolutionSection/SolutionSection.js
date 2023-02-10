@@ -15,7 +15,7 @@ const SolutionSection = () => {
       </span>
 
       {/* Solution point 1 */}
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-24 mb-[50px] lg:mb-[130px]">
+      <div className="flex flex-col-reverse xl:flex-row items-center xl:space-x-24 mb-[50px] xl:mb-[130px]">
         <div className="basis-1/2">
           <SolutionPoints
             title="POS system helps to improve your business easily & quickly without
@@ -31,7 +31,7 @@ const SolutionSection = () => {
             pointImg={PointIcon1}
           />
         </div>
-        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] xl:mb-0">
           <img
             src={BgImageRed}
             alt="bg"
@@ -45,8 +45,8 @@ const SolutionSection = () => {
         </div>
       </div>
       {/* solution point 2 */}
-      <div className="flex flex-col-reverse lg:flex-row-reverse items-center mb-[50px] lg:mb-[130px]">
-        <div className="basis-1/2 ml-0 lg:ml-12">
+      <div className="flex flex-col-reverse xl:flex-row-reverse items-center mb-[50px] xl:mb-[130px]">
+        <div className="basis-1/2 ml-0 xl:ml-12">
           <SolutionPoints
             title="Grow your business from one to a hundred stores through multi-store management"
             subTitle="With multi-store management you can easily grow your business. Easily keep track of all transactions & keep inventory management with POS. Save all your data sources together securely."
@@ -58,7 +58,7 @@ const SolutionSection = () => {
             pointImg={PointIcon2}
           />
         </div>
-        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] xl:mb-0">
           <img
             src={BgImageBlue}
             alt="bg"
@@ -73,7 +73,7 @@ const SolutionSection = () => {
       </div>
 
       {/* solution point 3 */}
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-24">
+      <div className="flex flex-col-reverse xl:flex-row items-center xl:space-x-24">
         <div className="basis-1/2">
           <SolutionPoints
             title="POS system helps to improve your business easily & quickly without
@@ -89,7 +89,7 @@ const SolutionSection = () => {
             pointImg={PointIcon1}
           />
         </div>
-        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] lg:mb-0">
+        <div className="relative basis-1/2 flex items-center justify-center mb-[50px] xl:mb-0">
           <img
             src={BgImageRed}
             alt="bg"

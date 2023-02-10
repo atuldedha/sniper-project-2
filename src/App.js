@@ -21,6 +21,14 @@ function App() {
       {/* Solutions Section */}
       <SolutionSection />
 
+      {/* Join Course Section */}
+      <ContactSection
+        titleText="Join one of our free courses now"
+        subText="Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus."
+        buttonText="Join Free Class Now"
+        handleClick={() => {}}
+      />
+
       {/* features section */}
       <FeaturesSection />
 

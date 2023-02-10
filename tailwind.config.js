@@ -7,6 +7,7 @@ module.exports = {
         bgColor:
           "linear-gradient(90deg, #1B1B1B 17.28%, rgba(0, 0, 0, 0) 100%)",
         bgColor2: "linear-gradient(270deg, #FFF6F7 0%, #1B693A 100%)",
+        bgColor3: "linear-gradient(180deg, #1B693A 33.33%, #FFF6F7 100%)",
       },
       colors: {
         white1: "#FDFDFD",

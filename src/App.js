@@ -1,3 +1,4 @@
+import CalculateSection from "./components/CalculateSection/CalculateSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import FAQSection from "./components/FAQSection/FAQSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
@@ -34,6 +35,8 @@ function App() {
 
       {/* Scale Learning Section */}
       <ScaleLearningSection />
+
+      {<CalculateSection />}
 
       {/* Join Course Section */}
       <ContactSection

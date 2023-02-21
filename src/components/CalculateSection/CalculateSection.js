@@ -115,7 +115,7 @@ const CalculateSection = () => {
 
       {/* Right Section for output */}
       <div className="basis-1/2 flex items-end md:items-center justify-center md:justify-end">
-        <div className="rounded-[50%] absolute h-[600px] bottom-0 left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
+        <div className="rounded-[50%] absolute h-[600px] xs:bottom-0 left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
         <div className="relative">
           <img
             src={PhoneImage}

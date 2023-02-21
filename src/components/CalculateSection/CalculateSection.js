@@ -62,11 +62,13 @@ const CalculateSection = () => {
   return (
     <div className="w-full relative flex flex-col-reverse xl:space-y-0 xl:flex-row items-center justify-center px-[30px] md:px-[60px] xl:px-[150px] py-[30px] md:py-[60px] xl:py-[100px]">
       {/* Left Section for inputs */}
-      <div className="basis-1/2 flex flex-col space-y-3 w-[300px] md:w-[500px] xl:w-full bg-blue1 px-8 py-6 rounded-lg mt-6 xl:mt-0">
-        <span className="lg:px-8 font-poppins font-semibold text-white text-[12px] lg:text-[16px] leading-[22px] lg:leading-[28px]">
-          Calculate without stress with just a few clicks how you and your
-          business will benefit from SARK
-        </span>
+      <div className="basis-1/2 flex flex-col space-y-3 w-[300px] md:w-[500px] xl:w-full bg-violet3 px-8 py-6 rounded-lg mt-6 xl:mt-0">
+        <div className="lg:px-8 px-2 py-2 lg:py-4 border border-blue6">
+          <span className="font-poppins font-semibold text-white text-[12px] lg:text-[16px] leading-[22px] lg:leading-[28px]">
+            Calculate without stress with just a few clicks how you and your
+            business will benefit from SARK
+          </span>
+        </div>
         <div className="flex flex-col items-start">
           <span className="font-poppins font-semibold text-white text-[12px] lg:text-[16px] leading-[22px] lg:leading-[28px]">
             How many emplyees/staff does your company has?
@@ -115,7 +117,7 @@ const CalculateSection = () => {
 
         <div className="w-[20%] border-b-[1px] border-b-green5 mb-[10px] " />
         <button
-          className="w-full bg-green6 text-center py-3 text-black font-medium font-poppins text-[12px] lg:text-[16px] leading-[22px] lg:leading-[26px] rounded-md"
+          className="w-full bg-blue6 text-center py-3 text-black font-medium font-poppins text-[12px] lg:text-[16px] leading-[22px] lg:leading-[26px] rounded-md"
           onClick={calculateCharges}
         >
           Show Result

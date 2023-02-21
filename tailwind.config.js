@@ -29,6 +29,7 @@ module.exports = {
         blue3: "#080A47",
         blue4: "#4352C9",
         blue5: "#080A47",
+        blue6: "#24a5c7",
         gray1: "#434D56",
         gray2: "#f3f4f6",
         gray3: "#FEFBFC",
@@ -36,6 +37,7 @@ module.exports = {
         yellow1: "#FFFAF5",
         violet1: "#E7D5FE",
         violet2: "#6D2FFD",
+        violet3: "#5860d6",
         pale1: "#F5E5E5",
       },
       fontFamily: {

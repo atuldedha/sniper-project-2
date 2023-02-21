@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import PhoneImage from "../../images/phone.png";
 import { CheckIcon } from "@heroicons/react/24/solid";
 

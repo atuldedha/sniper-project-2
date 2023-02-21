@@ -5,6 +5,7 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 const CalculateSection = () => {
   const [empolyees, setEmployees] = useState("");
   const [noShow, setNoShow] = useState("");
+  const [noShowOutput, setNoShowOutput] = useState(0);
   const [pricePerTatoo, setPricePerTatoo] = useState("");
   const [lossesPerMonthWithoutApp, setLossesPerMonthWithoutApp] = useState(0);
   const [lossesPerMonthWitApp, setLossesPerMonthWitApp] = useState(0);
@@ -48,6 +49,7 @@ const CalculateSection = () => {
       } else {
         loss = empolyees * noShow * pricePerTatoo;
       }
+      setNoShowOutput(noShow);
       setLossesPerMonthWithoutApp(loss);
       const profit = 0.6 * loss;
       setProfit(profit);
@@ -115,7 +117,7 @@ const CalculateSection = () => {
 
       {/* Right Section for output */}
       <div className="basis-1/2 flex items-end md:items-center justify-center md:justify-end">
-        <div className="rounded-[50%] absolute h-[600px] xs:bottom-0 left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
+        <div className="rounded-[50%] absolute h-[450px] sm:h-[600px] md:bottom-[none] left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
         <div className="relative">
           <img
             src={PhoneImage}
@@ -146,20 +148,22 @@ const CalculateSection = () => {
               <span className="font-inter font-medium text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 Without Sleeqbooking
               </span>
-              <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show ? noShow || 0 : 0}
+              <span className="basis-2/5 overflow-scroll whitespace-nowrap scrollbar-hide text-end font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
+                {noShowOutput || 0}
               </span>
             </div>
             <div className="flex items-center justify-between w-full mt-[10px]">
               <span className="font-inter font-normal text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 With Sleeqbooking
               </span>
-              <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show ? Math.round(noShow / 2) || 0 : 0}
+              <span className="basis-2/5 overflow-scroll whitespace-nowrap scrollbar-hide text-end font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
+                {Math.round(noShowOutput / 2) || 0}
               </span>
             </div>
             <div className="w-full text-end font-inter font-extrabold text-green7 text-[26px] lg:text-[45px] leading-[30px] lg:leading-[54px] mt-1">
-              {show && Math.round(noShow / 2)}
+              <span className="w-full whitespace-nowrap inline-block overflow-scroll text-end scrollbar-hide">
+                {Math.round(noShowOutput / 2) - noShowOutput}
+              </span>
             </div>
           </div>
 
@@ -171,7 +175,7 @@ const CalculateSection = () => {
               <span className="font-inter font-medium text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 Without Sleeqbooking
               </span>
-              <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
+              <span className="basis-2/5 overflow-scroll whitespace-nowrap scrollbar-hide text-end font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 {show ? `${lossesPerMonthWithoutApp} £` || 0 : 0}
               </span>
             </div>
@@ -179,12 +183,14 @@ const CalculateSection = () => {
               <span className="font-inter font-normal text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 With Sleeqbooking
               </span>
-              <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
+              <span className="basis-2/5 overflow-scroll whitespace-nowrap scrollbar-hide text-end font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
                 {show ? `${lossesPerMonthWitApp} £` || 0 : 0}
               </span>
             </div>
             <div className="w-full text-end font-inter font-extrabold text-green7 text-[26px] lg:text-[45px] leading-[30px] lg:leading-[54px] mt-1">
-              {show && (profit > 0 ? `+ ${profit} £` : 0)}
+              <span className="w-full whitespace-nowrap inline-block overflow-scroll text-end scrollbar-hide">
+                {show && (profit > 0 ? `+ ${profit} £` : 0)}
+              </span>
             </div>
           </div>
         </div>

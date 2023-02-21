@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PhoneImage from "../../images/phone.png";
 import { CheckIcon } from "@heroicons/react/24/solid";
 
@@ -13,6 +13,7 @@ const CalculateSection = () => {
   const [noShowError, setNoShowError] = useState(false);
   const [priceError, setPriceError] = useState(false);
   const [show, setShow] = useState(false);
+  const ref = useRef();
 
   const calculateCharges = () => {
     let showError;
@@ -54,8 +55,10 @@ const CalculateSection = () => {
       const profit = 0.6 * loss;
       setProfit(profit);
       setLossesPerMonthWitApp(loss - profit);
+      ref.current.scrollIntoView();
     }
   };
+
   return (
     <div className="w-full relative flex flex-col-reverse xl:space-y-0 xl:flex-row items-center justify-center px-[30px] md:px-[60px] xl:px-[150px] py-[30px] md:py-[60px] xl:py-[100px]">
       {/* Left Section for inputs */}
@@ -116,7 +119,10 @@ const CalculateSection = () => {
       </div>
 
       {/* Right Section for output */}
-      <div className="basis-1/2 flex items-end md:items-center justify-center md:justify-end">
+      <div
+        className="basis-1/2 flex items-end md:items-center justify-center md:justify-end"
+        ref={ref}
+      >
         <div className="rounded-[50%] absolute h-[450px] top-10 sm:h-[600px] md:bottom-[none] left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
         <div className="relative">
           <img

@@ -189,7 +189,7 @@ const CalculateSection = () => {
             </div>
             <div className="w-full text-end font-inter font-extrabold text-green7 text-[26px] lg:text-[45px] leading-[30px] lg:leading-[54px] mt-1">
               <span className="w-full whitespace-nowrap inline-block overflow-scroll text-end scrollbar-hide">
-                {show && (profit > 0 ? `+ ${profit} £` : 0)}
+                {show ? (profit > 0 ? `+ ${profit} £` : 0) : 0}
               </span>
             </div>
           </div>

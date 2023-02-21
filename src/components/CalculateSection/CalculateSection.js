@@ -147,7 +147,7 @@ const CalculateSection = () => {
                 Without Sleeqbooking
               </span>
               <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show && (noShow || 0)}
+                {show ? noShow || 0 : 0}
               </span>
             </div>
             <div className="flex items-center justify-between w-full mt-[10px]">
@@ -155,11 +155,11 @@ const CalculateSection = () => {
                 With Sleeqbooking
               </span>
               <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show && (Math.round(noShow / 2) || 0)}
+                {show ? Math.round(noShow / 2) || 0 : 0}
               </span>
             </div>
             <div className="w-full text-end font-inter font-extrabold text-green7 text-[26px] lg:text-[45px] leading-[30px] lg:leading-[54px] mt-1">
-              {show && Math.round(noShow / 2) - noShow}
+              {show && Math.round(noShow / 2)}
             </div>
           </div>
 
@@ -172,7 +172,7 @@ const CalculateSection = () => {
                 Without Sleeqbooking
               </span>
               <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show && (lossesPerMonthWithoutApp || 0)}
+                {show ? `${lossesPerMonthWithoutApp} £` || 0 : 0}
               </span>
             </div>
             <div className="flex items-center justify-between w-full mt-[10px]">
@@ -180,7 +180,7 @@ const CalculateSection = () => {
                 With Sleeqbooking
               </span>
               <span className="font-inter font-bold text-blue5 text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px]">
-                {show && (lossesPerMonthWitApp || 0)}
+                {show ? `${lossesPerMonthWitApp} £` || 0 : 0}
               </span>
             </div>
             <div className="w-full text-end font-inter font-extrabold text-green7 text-[26px] lg:text-[45px] leading-[30px] lg:leading-[54px] mt-1">

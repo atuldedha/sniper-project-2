@@ -57,7 +57,7 @@ const CalculateSection = () => {
   return (
     <div className="w-full relative flex flex-col space-y-6 xl:space-y-0 xl:flex-row items-center justify-center px-[30px] md:px-[60px] xl:px-[150px] py-[30px] md:py-[60px] xl:py-[100px]">
       {/* Left Section for inputs */}
-      <div className="basis-1/2 flex flex-col space-y-3 w-[500px] xl:w-full bg-blue1 px-8 py-6 rounded-lg">
+      <div className="basis-1/2 flex flex-col space-y-3 w-[300px] md:w-[500px] xl:w-full bg-blue1 px-8 py-6 rounded-lg">
         <div className="flex flex-col items-start">
           <span className="font-poppins font-semibold text-white text-[12px] lg:text-[16px] leading-[22px] lg:leading-[28px]">
             How many emplyees/staff does your company has?
@@ -114,8 +114,8 @@ const CalculateSection = () => {
       </div>
 
       {/* Right Section for output */}
-      <div className="basis-1/2 flex items-center justify-center">
-        <div className="rounded-[50%] absolute h-[900px] bg-pale1 lg:left-1/2 lg:-right-28"></div>
+      <div className="basis-1/2 flex items-end md:items-center justify-center md:justify-end">
+        <div className="rounded-[50%] absolute h-[600px] bottom-0 left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
         <div className="relative">
           <img
             src={PhoneImage}
@@ -128,17 +128,17 @@ const CalculateSection = () => {
               save and make more money
             </span>
           </div>
-          <div className="absolute top-16 lg:top-20 left-[40px] lg:left-[25px] xl:left-16 flex justify-center items-center w-[170px] lg:w-[322px] font-public-sans font-extrabold xl:text-[28px] lg:text-[24px] text-[20px] leading-[30px] xl:leading-[38px] text-green2 text-center">
+          <div className="absolute top-16 lg:top-20 left-[40px] lg:left-[25px] xl:left-16 flex justify-center items-center w-[170px] lg:w-[322px] font-public-sans font-extrabold xl:text-[28px] lg:text-[24px] text-[16px] leading-[30px] xl:leading-[38px] text-green2 text-center">
             Reduce missed appointments with automatic reminders
           </div>
-          <div className="absolute flex items-center space-x-2 top-48 lg:top-52 right-[55px] lg:right-[100px] xl:-right-[60px] px-2 py-1 bg-green7 rounded-[87px]">
+          <div className="absolute flex items-center space-x-2 top-40 lg:top-52 right-[55px] lg:right-[100px] xl:-right-[60px] px-2 py-1 bg-green7 rounded-[87px]">
             <CheckIcon className="h-7 w-7 text-white text-bold" />
             <span className="font-public-sans font-bold text-[16px] lg:text-[20px] xl:text-[25px] leading-[22px] xl:leading-[30px] text-white">
               60% less no-shows
             </span>
           </div>
 
-          <div className="bg-white top-60 lg:top-64 right-8 lg:right-0 xl:right-10 flex flex-col items-center justify-center absolute p-[10px] lg:p-[25px] lg:w-[458px] h-[197px] rounded-md mb-3">
+          <div className="bg-white top-52 lg:top-64 right-12 lg:right-0 xl:right-10 flex flex-col items-center justify-center absolute p-[10px] lg:p-[25px] lg:w-[458px] h-[130px] lg:h-[190px] rounded-md mb-3">
             <span className="w-full text-start font-inter font-semibold text-[14px] lg:text-[21px] leading-[22px] lg:leading-[26px] text-blue5">
               Missed appointments per month
             </span>
@@ -163,7 +163,7 @@ const CalculateSection = () => {
             </div>
           </div>
 
-          <div className="bg-white top-[360px] lg:top-[420px] xl:top-[470px] right-8 lg:right-0 xl:right-10 flex flex-col items-center justify-center absolute p-[10px] lg:p-[25px] lg:w-[458px] rounded-md">
+          <div className="bg-white top-[350px] lg:top-[450px] xl:top-[470px] right-12 lg:right-0 xl:right-10 flex flex-col items-center justify-center absolute p-[10px] lg:p-[25px] lg:w-[458px] h-[150px] lg:h-[200px] rounded-md">
             <span className="w-full text-start font-inter font-semibold text-[12px] lg:text-[21px] leading-[22px] lg:leading-[26px] text-blue5">
               Increased revenue per month due to reduced missed appointments
             </span>

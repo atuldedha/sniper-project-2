@@ -57,9 +57,9 @@ const CalculateSection = () => {
     }
   };
   return (
-    <div className="w-full relative flex flex-col space-y-6 xl:space-y-0 xl:flex-row items-center justify-center px-[30px] md:px-[60px] xl:px-[150px] py-[30px] md:py-[60px] xl:py-[100px]">
+    <div className="w-full relative flex flex-col-reverse xl:space-y-0 xl:flex-row items-center justify-center px-[30px] md:px-[60px] xl:px-[150px] py-[30px] md:py-[60px] xl:py-[100px]">
       {/* Left Section for inputs */}
-      <div className="basis-1/2 flex flex-col space-y-3 w-[300px] md:w-[500px] xl:w-full bg-blue1 px-8 py-6 rounded-lg">
+      <div className="basis-1/2 flex flex-col space-y-3 w-[300px] md:w-[500px] xl:w-full bg-blue1 px-8 py-6 rounded-lg mt-6 xl:mt-0">
         <div className="flex flex-col items-start">
           <span className="font-poppins font-semibold text-white text-[12px] lg:text-[16px] leading-[22px] lg:leading-[28px]">
             How many emplyees/staff does your company has?
@@ -117,7 +117,7 @@ const CalculateSection = () => {
 
       {/* Right Section for output */}
       <div className="basis-1/2 flex items-end md:items-center justify-center md:justify-end">
-        <div className="rounded-[50%] absolute h-[450px] sm:h-[600px] md:bottom-[none] left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
+        <div className="rounded-[50%] absolute h-[450px] top-10 sm:h-[600px] md:bottom-[none] left-5 right-5 lg:h-[700px] xl:h-[900px] bg-pale1 lg:left-40 lg:right-40 xl:left-[45%] xl:-right-28 -z-[1]"></div>
         <div className="relative">
           <img
             src={PhoneImage}

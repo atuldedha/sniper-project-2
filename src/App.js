@@ -17,6 +17,7 @@ function App() {
   const featuresRef = useRef();
   const faqRef = useRef();
   const aboutRef = useRef();
+  const waitlistRef = useRef();
 
   const handleNavigation = (pageName) => {
     if (pageName === "home") {
@@ -29,6 +30,8 @@ function App() {
       faqRef.current.scrollIntoView();
     } else if (pageName === "about") {
       aboutRef.current.scrollIntoView();
+    } else if (pageName === "waitlist") {
+      waitlistRef.current.scrollIntoView();
     }
   };
   return (
@@ -47,14 +50,14 @@ function App() {
         titleText="Join one of our free courses now"
         subText="Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus."
         buttonText="Join Free Class Now"
-        handleClick={() => {}}
+        handleClick={() => handleNavigation("waitlist")}
       />
 
       {/* features section */}
       <FeaturesSection innerRef={featuresRef} />
 
       {/* Scale Learning Section */}
-      <ScaleLearningSection />
+      <ScaleLearningSection innerRef={aboutRef} />
 
       {<CalculateSection />}
 
@@ -63,11 +66,11 @@ function App() {
         titleText="Join one of our free courses now"
         subText="Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus."
         buttonText="Join Free Class Now"
-        handleClick={() => {}}
+        handleClick={() => handleNavigation("waitlist")}
       />
 
       {/* form section */}
-      <WaitingFormSection />
+      <WaitingFormSection innerRef={waitlistRef} />
 
       {/* header section */}
       <HeaderSection />
@@ -81,11 +84,11 @@ function App() {
         subText="We are happy to help you with any questions and take feedbacks to make
       the Sleeqbooking better for you’re Industry"
         buttonText="Contact us now"
-        handleClick={() => {}}
+        handleClick={() => handleNavigation("waitlist")}
       />
 
       {/* footer */}
-      <Footer innerRef={aboutRef} />
+      <Footer />
     </div>
   );
 }

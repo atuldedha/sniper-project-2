@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import FormImage from "../../images/formImage.svg";
 import CheckIcon from "../../images/check.png";
 
-const WaitingFormSection = () => {
+const WaitingFormSection = ({ innerRef }) => {
   const [type, setType] = useState("Tatoo");
   const [checked, setChecked] = useState(false);
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between px-[20px] py-[20px] lg:px-[50px] lg:py-[50px] bg-gray3">
+    <div
+      ref={innerRef}
+      className="flex flex-col lg:flex-row items-center justify-between px-[20px] py-[20px] lg:px-[50px] lg:py-[50px] bg-gray3"
+    >
       <div className="basis-1/2 flex items-center justify-center">
         <img
           src={FormImage}

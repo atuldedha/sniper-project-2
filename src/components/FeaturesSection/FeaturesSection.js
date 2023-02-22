@@ -5,7 +5,7 @@ import data from "./staticData";
 const FeaturesSection = () => {
   const [filterValue, setFilterValue] = useState("");
   return (
-    <div className="flex flex-col items-center justify-center px-[30px] md:px-[60px] lg:px-[150px] py-[30px] md:py-[60px] lg:py-[100px] w-full">
+    <div className="flex flex-col items-center justify-center px-[30px] md:px-[60px] lg:px-[150px] py-[30px] md:py-[60px] lg:py-[100px] w-full bg-[#fffaf5]">
       <span className="font-grotesk font-normal text-green4 text-[24px] leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[52px] lg:leading-[62px] text-center mb-10">
         SARK provides various types
       </span>

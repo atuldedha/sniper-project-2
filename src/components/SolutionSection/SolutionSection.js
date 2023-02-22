@@ -6,6 +6,7 @@ import BgImageRed from "../../images/bgImage1.png";
 import BgImage1 from "../../images/bgImage2.png";
 import BgImageBlue from "../../images/blueBg.svg";
 import BgImage2 from "../../images/combinedCards.svg";
+import PhoneBlank from "../../images/phoneBlank.jpg";
 
 const SolutionSection = () => {
   return (
@@ -91,14 +92,9 @@ const SolutionSection = () => {
         </div>
         <div className="relative basis-1/2 flex items-center justify-center mb-[50px] xl:mb-0">
           <img
-            src={BgImageRed}
+            src={PhoneBlank}
             alt="bg"
-            className="absolute -top-[44px] -left-10 lg:-top-[60px] lg:left-10 z-0 w-[300px] lg:w-[350px] 2xl:w-[387px]"
-          />
-          <img
-            src={BgImage1}
-            alt="bg"
-            className="z-10 w-[250px] lg:w-[300px] 2xl:w-[574px] relative"
+            className="z-10 w-[350px] lg:w-[450px] 2xl:w-[574px] relative"
           />
         </div>
       </div>

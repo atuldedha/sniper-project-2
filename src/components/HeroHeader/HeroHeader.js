@@ -36,26 +36,26 @@ const HeroHeader = ({ handleNavigation }) => {
               Home
             </span>
             <span
-              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white cursor-pointer"
               onClick={() => handleNavigation("about")}
             >
               About us
             </span>
             <span
-              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white cursor-pointer"
               onClick={() => handleNavigation("industry")}
             >
               Industry
             </span>
 
             <span
-              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white cursor-pointer"
               onClick={() => handleNavigation("feature")}
             >
               Features
             </span>
             <span
-              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white cursor-pointer"
               onClick={() => handleNavigation("faq")}
             >
               Faq
@@ -86,32 +86,32 @@ const HeroHeader = ({ handleNavigation }) => {
           {/* else show the header */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             <span
-              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white cursor-pointer"
               onClick={() => handleNavigation("home")}
             >
               Home
             </span>
             <span
-              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white cursor-pointer"
               onClick={() => handleNavigation("about")}
             >
               About us
             </span>
             <span
-              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white cursor-pointer"
               onClick={() => handleNavigation("industry")}
             >
               Industry
             </span>
 
             <span
-              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white cursor-pointer"
               onClick={() => handleNavigation("feature")}
             >
               Features
             </span>
             <span
-              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white cursor-pointer"
               onClick={() => handleNavigation("faq")}
             >
               Faq

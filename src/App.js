@@ -88,7 +88,7 @@ function App() {
       />
 
       {/* footer */}
-      <Footer />
+      <Footer handleNavigation={handleNavigation} />
     </div>
   );
 }

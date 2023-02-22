@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ handleNavigation }) => {
   return (
     <div className=" w-full flex flex-col items-center justify-center px-10 md:px-20 lg:px-0 py-5 lg:py-10">
       <div className="w-full lg:w-1/2">
@@ -60,59 +60,33 @@ const Footer = () => {
 
         <nav aria-label="Footer Nav" class="mt-12">
           <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                About
-              </a>
-            </li>
+            <span
+              class="text-gray-700 transition hover:text-gray-700/75 cursor-pointer"
+              onClick={() => handleNavigation("home")}
+            >
+              Home
+            </span>
 
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Careers
-              </a>
-            </li>
+            <span
+              class="text-gray-700 transition hover:text-gray-700/75 cursor-pointer"
+              onClick={() => handleNavigation("about")}
+            >
+              About us
+            </span>
 
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                History
-              </a>
-            </li>
+            <span
+              class="text-gray-700 transition hover:text-gray-700/75 cursor-pointer"
+              onClick={() => handleNavigation("feature")}
+            >
+              Features
+            </span>
 
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Blog
-              </a>
-            </li>
+            <span
+              class="text-gray-700 transition hover:text-gray-700/75 cursor-pointer"
+              onClick={() => handleNavigation("faq")}
+            >
+              FAQ
+            </span>
           </ul>
         </nav>
 

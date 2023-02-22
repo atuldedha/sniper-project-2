@@ -1,8 +1,11 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ innerRef }) => {
   return (
-    <div className=" w-full flex flex-col items-center justify-center px-10 md:px-20 lg:px-0 py-5 lg:py-10">
+    <div
+      ref={innerRef}
+      className=" w-full flex flex-col items-center justify-center px-10 md:px-20 lg:px-0 py-5 lg:py-10"
+    >
       <div className="w-full lg:w-1/2">
         <div class="flex justify-center text-teal-600">
           <svg

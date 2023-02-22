@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import CalculateSection from "./components/CalculateSection/CalculateSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import FAQSection from "./components/FAQSection/FAQSection";
@@ -11,13 +12,32 @@ import SpecificationSection from "./components/SpecificationSection/Specificatio
 import WaitingFormSection from "./components/WaitingFormSection/WaitingFormSection";
 
 function App() {
+  const homeRef = useRef();
+  const industryRef = useRef();
+  const featuresRef = useRef();
+  const faqRef = useRef();
+  const aboutRef = useRef();
+
+  const handleNavigation = (pageName) => {
+    if (pageName === "home") {
+      homeRef.current.scrollIntoView();
+    } else if (pageName === "industry") {
+      industryRef.current.scrollIntoView();
+    } else if (pageName === "feature") {
+      featuresRef.current.scrollIntoView();
+    } else if (pageName === "faq") {
+      faqRef.current.scrollIntoView();
+    } else if (pageName === "about") {
+      aboutRef.current.scrollIntoView();
+    }
+  };
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       {/* HeroSection */}
-      <HeroSection />
+      <HeroSection homeRef={homeRef} handleNavigation={handleNavigation} />
 
       {/* specifications */}
-      <SpecificationSection />
+      <SpecificationSection innerRef={industryRef} />
 
       {/* Solutions Section */}
       <SolutionSection />
@@ -31,7 +51,7 @@ function App() {
       />
 
       {/* features section */}
-      <FeaturesSection />
+      <FeaturesSection innerRef={featuresRef} />
 
       {/* Scale Learning Section */}
       <ScaleLearningSection />
@@ -53,7 +73,7 @@ function App() {
       <HeaderSection />
 
       {/* FAQ Section */}
-      <FAQSection />
+      <FAQSection innerRef={faqRef} />
 
       {/* Contact us  */}
       <ContactSection
@@ -65,7 +85,7 @@ function App() {
       />
 
       {/* footer */}
-      <Footer />
+      <Footer innerRef={aboutRef} />
     </div>
   );
 }

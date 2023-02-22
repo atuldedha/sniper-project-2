@@ -4,9 +4,12 @@ import MessageImage from "../../images/message.png";
 import PersonsImage from "../../images/persons.png";
 import PiechartImage from "../../images/piechart.png";
 // className="flex flex-wrap items-center gap-[58px] justify-center"
-const SpecificationSection = () => {
+const SpecificationSection = ({ innerRef }) => {
   return (
-    <div className="flex flex-col px-6 py-5 md:px-20 lg:px-40 md:py-10 lg:py-20 items-center justify-center space-y-8 lg:space-y-24">
+    <div
+      ref={innerRef}
+      className="flex flex-col px-6 py-5 md:px-20 lg:px-40 md:py-10 lg:py-20 items-center justify-center space-y-8 lg:space-y-24"
+    >
       <span className="font-plus font-bold text-[32px] leading-[42px] text-center text-black2">
         Why should you choose us?
       </span>

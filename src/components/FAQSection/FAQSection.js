@@ -2,10 +2,13 @@ import React from "react";
 import FAQs from "./FAQs/FAQs";
 
 // FAQ Section component
-const FAQSection = () => {
+const FAQSection = ({ innerRef }) => {
   const handleAnswerClick = () => {};
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div
+      ref={innerRef}
+      className="flex flex-col items-center justify-center w-full"
+    >
       <div className="w-full px-8 lg:px-0 lg:w-1/2 flex flex-col items-center justify-center">
         <span className="font-plus font-bold text-[22px] lg:text-[42px] leading-[38px] xl:leading-[62px] text-center text-blue1 mb-5 mt-10 xl:mt-40">
           Frequently asked questions (FAQ)

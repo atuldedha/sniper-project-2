@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
-const HeroHeader = () => {
+const HeroHeader = ({ handleNavigation }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const ref = useRef();
 
@@ -29,20 +29,35 @@ const HeroHeader = () => {
           ref={ref}
         >
           <div className="flex flex-col items-center justify-center space-y-4 my-auto">
-            <span className="font-plus font-extrabold text-[12px] leading-[22px] text-white">
+            <span
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white cursor-pointer"
+              onClick={() => handleNavigation("home")}
+            >
               Home
             </span>
-            <span className="font-plus font-extrabold text-[12px] leading-[22px] text-white">
+            <span
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              onClick={() => handleNavigation("about")}
+            >
               About us
             </span>
-            <span className="font-plus font-extrabold text-[12px] leading-[22px] text-white">
+            <span
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              onClick={() => handleNavigation("industry")}
+            >
               Industry
             </span>
 
-            <span className="font-plus font-extrabold text-[12px] leading-[22px] text-white">
+            <span
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              onClick={() => handleNavigation("feature")}
+            >
               Features
             </span>
-            <span className="font-plus font-extrabold text-[12px] leading-[22px] text-white">
+            <span
+              className="font-plus font-extrabold text-[12px] leading-[22px] text-white"
+              onClick={() => handleNavigation("faq")}
+            >
               Faq
             </span>
           </div>
@@ -70,20 +85,35 @@ const HeroHeader = () => {
           </div>
           {/* else show the header */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <span className="font-plus font-extrabold text-[14px] leading-[28px] text-white">
+            <span
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              onClick={() => handleNavigation("home")}
+            >
               Home
             </span>
-            <span className="font-plus font-extrabold text-[14px] leading-[28px] text-white">
+            <span
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              onClick={() => handleNavigation("about")}
+            >
               About us
             </span>
-            <span className="font-plus font-extrabold text-[14px] leading-[28px] text-white">
+            <span
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              onClick={() => handleNavigation("industry")}
+            >
               Industry
             </span>
 
-            <span className="font-plus font-extrabold text-[14px] leading-[28px] text-white">
+            <span
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              onClick={() => handleNavigation("feature")}
+            >
               Features
             </span>
-            <span className="font-plus font-extrabold text-[14px] leading-[28px] text-white">
+            <span
+              className="font-plus font-extrabold text-[14px] leading-[28px] text-white"
+              onClick={() => handleNavigation("faq")}
+            >
               Faq
             </span>
           </div>

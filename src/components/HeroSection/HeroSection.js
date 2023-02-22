@@ -23,7 +23,7 @@ const HeroSection = ({ homeRef, handleNavigation }) => {
           <div className="flex items-center justify-center md:justify-start space-x-4">
             <button
               className="px-3 py-2 lg:px-5 lg:py-2 bg-white text-green2 cursor-pointer font-plus font-bold text-[12px] md:text-[16px] leading-[26px] lg:text-[20px] lg:leading-[34px] text-center rounded-lg"
-              onClick={() => {}}
+              onClick={() => handleNavigation("waitlist")}
             >
               Join the Waitlist
             </button>
